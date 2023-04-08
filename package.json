@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "name": "passgen",
+  "version": "1.1.0",
+  "description": "Simple password generator.",
+  "main": "passGen.js",
+  "devDependencies": {
+    "purgecss": "^5.0.0",
+    "webpack": "^4.29.0"
+  },
+  "scripts": {
+  "build": "purgecss --css node_modules/bootstrap/dist/css/bootstrap.min.css --content index.html --output dist/bootstrap.min.css"},
+  "keywords": [
+    "js",
+    "bootstrap"
+  ],
+  "author": "Alex Lestra",
+  "license": "ISC"
+}

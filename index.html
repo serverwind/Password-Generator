@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Password Generator by Lestra</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body style='background-color:#111116'>
+
+    <section class="container-fluid">
+      <div class="row justify-content-center align-items-center main-wrapper">
+        <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-7 col-sm-9">
+          <h1 id='proj' class='h4 text-center text-secondary'>Password Generator</h1>
+          <div id="your-pass" class='container p-3 my-4 bg-dark text-light fw-bold fs-4'>kewOz</div>
+          <div class='options bg-dark text-light px-3'>
+            <div class="row px-0 py-3 align-items-center">
+              <span class='col fs-5'>Character length</span>
+              <label id='len-num' class='col fs-2 text-end text-blue' for='pass-len'>5</label>
+            </div>
+            <input type="range" id="pass-len" class='form-range mb-4' value="5" min="5" max="14">
+            <div class="form-check mb-2">
+              <input class='form-check-input' type="radio" name="symbols" id="basic-sym" checked>
+              <label class="form-check-label" for="basic-sym">Use Basic Symbols <button class='btn btn-primary btn-sm ms-1' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='top' data-bs-content='Password will contain a-Z 0-9 symbols'>?</button></label>
+            </div>
+            <div class="form-check mb-4">
+              <input class='form-check-input' type="radio" name="symbols" id="spec-sym">
+              <label class="form-check-label" for="spec-sym">Use Special Symbols <button class='btn btn-primary btn-sm ms-1' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='top' data-bs-content='Password will contain basic symbols plus special symbols: ~!@#$%^*+-=:;.?/{}[]\()'>?</button></label>
+            </div>
+            <div class="row strength-div px-4 py-3 mx-0 dark text-secondary">
+              <span class='col'>STRENGTH</span>
+              <span class='col text-end align-items-center'>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </span>
+            </div>
+            <button id="generate" class='btn btn-primary my-3'>Generate</button>
+          </div>
+          <div class="row mt-3 fs-6 text-center text-secondary"><span>(c) by Alex Lestra 2023</span></div>
+        </div>
+      </div>
+    </section>
+
+    <script src='popover.js'></script>
+    <script src="passGen.js"></script>
+  </body>
+</html>

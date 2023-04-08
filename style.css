@@ -1,0 +1,24 @@
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #242424;
+}
+
+.main-wrapper {
+  height: 100vh;
+}
+
+.text-blue {
+  color: #0d6efd;
+}
+
+.bg-blue {
+  background-color: #0d6efd!important;
+}
+
+.dark {
+  background-color: #111116;
+}
+
+.popover-body {
+  font-family: 'Share Tech Mono', monospace;
+}
